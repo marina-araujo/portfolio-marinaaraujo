@@ -16,7 +16,7 @@ body, html {
 }
 
 header {
-    background-color: white;
+    background-color: black;
     
 }
 
@@ -27,7 +27,7 @@ header > nav {
 }
 
 header > nav > div {
-    background-color: #9b7eae;
+
     padding: 5px 20px ;
     margin-left: 5px;
     margin-top: 5px;
@@ -36,7 +36,7 @@ header > nav > div {
 
 nav > div > a {
     text-decoration: none;
-    color: white;
+    color: #b49fc3;
     font-weight: bold;
     padding: 5px 10px;
     margin: 2px;
@@ -61,10 +61,38 @@ section#home {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column nowrap;
+}
+
+div.titHome {
+    font-size: 1.5em;
+    padding-bottom: 50px;
+}
+div.conteudoHome {
+    display: flex; /* Certifique-se de adicionar display: flex */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+    width: 80%; /* Controle o espaço ocupado pela seção */
+}
+div.imgHome {
+    background: url(../imgs/eunapraia.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 300px; /* Adicione um width para controlar o tamanho da imagem */
+    margin-right: 20px; /* Espaçamento entre imagem e texto */
+    border-radius: 20px;
 }
 
 div.txtHome {
-    font-size: 1.5em;
+    max-width: 400px; /* Limita o tamanho do texto */
+    height: 300px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
 }
 
 section#curriculo {
