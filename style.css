@@ -60,6 +60,7 @@ section#home {
     height: 700px;
     display: flex;
     justify-content: center;
+    
     align-items: center;
     flex-flow: column nowrap;
 }
@@ -71,12 +72,12 @@ div.titHome {
 div.conteudoHome {
     display: flex; /* Certifique-se de adicionar display: flex */
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
     width: 80%; /* Controle o espaço ocupado pela seção */
 }
 div.imgHome {
-    background: url(../imgs/eunapraia.jpg) no-repeat;
+    background: url(../imgs/marina-profissional.png) no-repeat;
     background-size: cover;
     background-position: center center;
     height: 300px;
