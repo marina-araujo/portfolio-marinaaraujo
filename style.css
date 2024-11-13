@@ -69,6 +69,7 @@ div.titHome {
     font-size: 1.5em;
     text-align: center;
     padding-bottom: 50px;
+    width: 80%;
 }
 div.conteudoHome {
     display: flex; /* Certifique-se de adicionar display: flex */
@@ -244,9 +245,13 @@ div.titSobre {
     color: #444;
 }
 
-.portfolio-item p {
-    font-size: 1em;
-    color: #666;
+.titPortfolio p {
+    color: white;
+    font-size: 1.2em;
+    margin: 0 auto; 
+    margin-bottom: 30px;
+    max-width: 80%; 
+    text-align: center; 
 }
 
 .portfolio-item a {
