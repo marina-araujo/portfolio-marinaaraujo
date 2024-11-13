@@ -62,11 +62,12 @@ section#home {
     justify-content: center;
     
     align-items: center;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
 }
 
 div.titHome {
     font-size: 1.5em;
+    text-align: center;
     padding-bottom: 50px;
 }
 div.conteudoHome {
@@ -89,6 +90,7 @@ div.imgHome {
 div.txtHome {
     max-width: 400px; /* Limita o tamanho do texto */
     min-height: 300px;
+    text-align: center;
     padding: 10px;
     border: 1px solid white;
     border-radius: 20px;
