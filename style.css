@@ -88,7 +88,7 @@ div.imgHome {
 
 div.txtHome {
     max-width: 400px; /* Limita o tamanho do texto */
-    height: 300px;
+    min-height: 300px;
     padding: 10px;
     border: 1px solid white;
     border-radius: 20px;
@@ -123,7 +123,7 @@ div.txtSobre {
     margin: 10px;
 }
 
-.titSection {
+.titSkills {
     color: white;
     margin: 30px;
     font-size: 1.5em;
@@ -144,13 +144,13 @@ div.titSobre {
     text-align: center;
 }
 
-.skills-title h2 {
-    font-size: 2em;
+.titSkills h2 {
+    font-size: 1.5em;
     margin-bottom: 30px;
     color: white;
 }
 
-.skills-list {
+.listaSkills {
     display: flex;
     flex-direction: row; /* Alinha os itens na horizontal */
     justify-content: center;
@@ -196,20 +196,20 @@ div.titSobre {
     text-align: center;
 }
 
-.portfolio-title h2 {
+.titPortfolio h2 {
     color: white;
     box-shadow: #232356;
     font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-.portfolio-title p {
+.titPortfolio p {
     color: white;
     font-size: 1.2em;
     margin-bottom: 30px;
 }
 
-.portfolio-gallery {
+.portfolio-galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -272,10 +272,41 @@ div.titSobre {
 
 section#contato {
     background-color: black;
-    height: 700px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contato-section h2 {
+    color: white;
+}
+
+.contato-section p {
+    color: white;
+    font-size: 1.1em;
+    
+}
+
+.contato-section a {
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.contato-section a:hover {
+    background-color: #555;
+    font-weight: bolder;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.conteudoContato {
+
 }
 
 footer {
