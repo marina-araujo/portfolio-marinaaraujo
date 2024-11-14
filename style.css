@@ -62,7 +62,7 @@ section#home {
     justify-content: center;
     
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: column wrap; 
 }
 
 div.titHome {
@@ -321,5 +321,17 @@ footer {
     text-align: center;
     padding: 5px;
 }
+/*
+@media (max-width: 768px) {
+    .conteudoHome {
+        flex-direction: column; // Alinha os elementos verticalmente 
+        text-align: center; // Centraliza o texto 
+    }
+
+    .imgHome, 
+    .txtHome {
+        width: 100%; // Garante que os elementos ocupem toda a largura disponível 
+    }
+}*/
 
 
