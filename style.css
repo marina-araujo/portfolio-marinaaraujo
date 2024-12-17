@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
-
-
 * {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -17,24 +15,22 @@ body, html {
 
 header {
     background-color: black;
-    
 }
 
-header > nav {
+header nav {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
-header > nav > div {
-
-    padding: 5px 20px ;
+header nav div {
+    padding: 5px 20px;
     margin-left: 5px;
     margin-top: 5px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0;
 }
 
-nav > div > a {
+nav div a {
     text-decoration: none;
     color: #b49fc3;
     font-weight: bold;
@@ -42,11 +38,10 @@ nav > div > a {
     margin: 2px;
     border-radius: 5px;
     transition-duration: 0.3s;
-    
 }
 
-nav > div > a:hover {
-    background-color: #745689; /* tentar entender pq o bloco do a fica menor que o da div */
+nav div a:hover {
+    background-color: #745689;
     color: azure;
 }
 
@@ -54,42 +49,44 @@ main {
     background-color: yellow;
 }
 
-section#home {
+#home {
     background-color: black;
     color: white;
     height: 700px;
     display: flex;
     justify-content: center;
-    
     align-items: center;
-    flex-flow: column wrap; 
+    flex-flow: column wrap;
 }
 
-div.titHome {
+.tit-home {
+    
     font-size: 1.5em;
     text-align: center;
     padding-bottom: 50px;
     width: 80%;
 }
-div.conteudoHome {
-    display: flex; /* Certifique-se de adicionar display: flex */
+
+.conteudo-home {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
-    width: 80%; /* Controle o espaço ocupado pela seção */
+    align-items: center;
+    width: 80%;
 }
-div.imgHome {
+
+.img-home {
     background: url(imgs/marina-profissional.png) no-repeat;
     background-size: cover;
     background-position: center center;
     height: 300px;
-    width: 300px; /* Adicione um width para controlar o tamanho da imagem */
-    margin-right: 20px; /* Espaçamento entre imagem e texto */
+    width: 300px;
+    margin-right: 20px;
     border-radius: 20px;
 }
 
-div.txtHome {
-    max-width: 400px; /* Limita o tamanho do texto */
+.txt-home {
+    max-width: 400px;
     min-height: 300px;
     text-align: center;
     padding: 10px;
@@ -100,22 +97,22 @@ div.txtHome {
     align-items: center;
     justify-content: space-evenly;
 }
-div.txtHome p {
-    text-align: center; /* Centraliza o texto horizontalmente */
-  }
 
-section#sobre {
-    background-image: linear-gradient(black, #232356,#24245b);
-    /*background-color: #745689;*/
+.txt-home p {
+    text-align: center;
+}
+
+#sobre {
+    background-image: linear-gradient(black, #232356, #24245b);
     min-height: 550px;
     padding: 10px;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-div.txtSobre {
+.txt-sobre {
     background-color: white;
     width: 80%;
     max-width: 700px;
@@ -126,14 +123,14 @@ div.txtSobre {
     margin: 10px;
 }
 
-.titSkills {
+.tit-skills {
     color: white;
     margin: 30px;
     font-size: 1.5em;
     text-shadow: 2px 2px 4px #1b1b1b;
 }
 
-div.titSobre {
+.tit-sobre {
     color: white;
     font-size: 1.6em;
     text-shadow: 2px 2px 2px #333;
@@ -147,18 +144,18 @@ div.titSobre {
     text-align: center;
 }
 
-.titSkills h2 {
+.tit-skills h2 {
     font-size: 1.5em;
     margin-bottom: 30px;
     color: white;
 }
 
-.listaSkills {
+.lista-skills {
     display: flex;
-    flex-direction: row; /* Alinha os itens na horizontal */
+    flex-direction: row;
     justify-content: center;
-    gap: 20px; /* Espaçamento entre os itens */
-    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .skill-item {
@@ -169,7 +166,7 @@ div.titSobre {
     width: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    text-align: left; /* Alinha os textos à esquerda */
+    text-align: left;
 }
 
 .skill-item:hover {
@@ -192,21 +189,22 @@ div.titSobre {
     color: #333;
     margin-bottom: 10px;
 }
+
 .portfolio-section {
-    background-image: linear-gradient(#232356,#24245b, black);
+    background-image: linear-gradient(#232356, #24245b, black);
     color: #333;
     padding: 50px 0;
     text-align: center;
 }
 
-.titPortfolio h2 {
+.tit-portfolio h2 {
     color: white;
     box-shadow: #232356;
     font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-.titPortfolio p {
+.tit-portfolio p {
     color: white;
     font-size: 1.2em;
     margin-bottom: 30px;
@@ -245,15 +243,6 @@ div.titSobre {
     color: #444;
 }
 
-.titPortfolio p {
-    color: white;
-    font-size: 1.2em;
-    margin: 0 auto; 
-    margin-bottom: 30px;
-    max-width: 80%; 
-    text-align: center; 
-}
-
 .portfolio-item a {
     display: inline-block;
     margin-top: 10px;
@@ -268,25 +257,15 @@ div.titSobre {
     background-color: #555;
 }
 
-/* section#portfolio {
-    background-image: linear-gradient(#24245b, black);
-    //background-color: lightyellow;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-section#contato {
+#contato {
     background-color: black;
     height: 300px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
+
 .contato-section h2 {
     color: white;
 }
@@ -294,7 +273,6 @@ section#contato {
 .contato-section p {
     color: white;
     font-size: 1.1em;
-    
 }
 
 .contato-section a {
@@ -307,13 +285,7 @@ section#contato {
 .contato-section a:hover {
     background-color: #555;
     font-weight: bolder;
-    margin: 5px;
-    padding: 5px;
     border-radius: 5px;
-}
-
-.conteudoContato {
-
 }
 
 footer {
@@ -321,17 +293,19 @@ footer {
     text-align: center;
     padding: 5px;
 }
-/*
-@media (max-width: 768px) {
-    .conteudoHome {
-        flex-direction: column; // Alinha os elementos verticalmente 
-        text-align: center; // Centraliza o texto 
+
+@media (max-width: 500px) {
+    .conteudo-home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
     }
 
-    .imgHome, 
-    .txtHome {
-        width: 100%; // Garante que os elementos ocupem toda a largura disponível 
+    .img-home, 
+    .txt-home {
+        width: 100%;
     }
-}*/
+}
 
 
