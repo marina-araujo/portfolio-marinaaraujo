@@ -15,24 +15,27 @@ body, html {
 
 header {
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 header nav div {
     padding: 5px 20px;
-    margin-left: 5px;
-    margin-top: 5px;
+    margin: 5px 0;
     border-radius: 10px 10px 0 0;
 }
 
 nav div a {
     text-decoration: none;
-    color: #b49fc3;
+    color: #c49ce0;
     font-weight: bold;
     padding: 5px 10px;
     margin: 2px;
@@ -40,8 +43,16 @@ nav div a {
     transition-duration: 0.3s;
 }
 
+#burguer {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
 nav div a:hover {
-    background-color: #745689;
+    /*background-color: #745689;*/
     color: azure;
 }
 
@@ -54,35 +65,37 @@ main {
     color: white;
     min-height: 700px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
 }
 
 .tit-home {
-    
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     padding-bottom: 50px;
     width: 80%;
 }
+.tit-home h1 {
+    padding-bottom: 10px;
+}
 
 .conteudo-home {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 80%;
+    text-align: center;
 }
 
 .img-home {
-    background: url(imgs/marina-profissional.png) no-repeat;
+    background: url('imgs/marina-profissional.png') no-repeat center center;
     background-size: cover;
-    background-position: center center;
     height: 300px;
     width: 300px;
-    margin-right: 20px;
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 
 .txt-home {
@@ -100,6 +113,39 @@ main {
 
 .txt-home p {
     text-align: center;
+}
+
+.skill-icon { 
+    font-size: 3em; /* Aumentei de 2em para 3em */ color: #333; margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+    header nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+
+    #burguer {
+        display: none;
+    }
+
+    #home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo-home {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-home {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
 }
 
 #sobre {
@@ -293,38 +339,3 @@ footer {
     text-align: center;
     padding: 5px;
 }
-
-@media (max-width: 500px) {
-    #home {
-        flex-flow: column nowrap !important;
-        align-items: center; 
-        align-content: center;
-        
-        /*padding-top: 80px;
-        padding-bottom: 40pc;*/
-    }
-    .tit-home {
-        margin-top: 20px;
-    }
-
-
-    .conteudo-home {
-        display: flex; 
-        flex-direction: column !important; 
-        align-items: center !important;
-        align-content: center !important;
-        text-align: center;
-        /*margin-top: 20px;*/
-    }
-
-    .img-home, 
-    .txt-home {
-        width: 100% !important; 
-    }
-
-    .img-home {
-        margin-bottom: 30px;
-    }
-}
-
-
