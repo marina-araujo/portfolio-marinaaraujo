@@ -295,8 +295,16 @@ footer {
 }
 
 @media (max-width: 500px) {
+    #home {
+        flex-flow: column nowrap !important; /* Garante a sobrescrição */
+        padding-top: 80px;
+        padding-bottom: 40pc;
+    }
+
+
     .conteudo-home {
-        flex-direction: column;
+        display: flex; /* Garantindo a flexibilidade */
+        flex-direction: column !important; /* Força o layout em coluna */
         align-items: center;
         text-align: center;
         margin-top: 20px;
@@ -304,7 +312,7 @@ footer {
 
     .img-home, 
     .txt-home {
-        width: 100%;
+        width: 100% !important; /* Responsividade total */
     }
 }
 
