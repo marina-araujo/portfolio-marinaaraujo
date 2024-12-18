@@ -52,7 +52,7 @@ main {
 #home {
     background-color: black;
     color: white;
-    height: 700px;
+    min-height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,23 +296,34 @@ footer {
 
 @media (max-width: 500px) {
     #home {
-        flex-flow: column nowrap !important; /* Garante a sobrescrição */
-        padding-top: 80px;
-        padding-bottom: 40pc;
+        flex-flow: column nowrap !important;
+        align-items: center; 
+        align-content: center;
+        
+        /*padding-top: 80px;
+        padding-bottom: 40pc;*/
+    }
+    .tit-home {
+        margin-top: 20px;
     }
 
 
     .conteudo-home {
-        display: flex; /* Garantindo a flexibilidade */
-        flex-direction: column !important; /* Força o layout em coluna */
-        align-items: center;
+        display: flex; 
+        flex-direction: column !important; 
+        align-items: center !important;
+        align-content: center !important;
         text-align: center;
-        margin-top: 20px;
+        /*margin-top: 20px;*/
     }
 
     .img-home, 
     .txt-home {
-        width: 100% !important; /* Responsividade total */
+        width: 100% !important; 
+    }
+
+    .img-home {
+        margin-bottom: 30px;
     }
 }
 
