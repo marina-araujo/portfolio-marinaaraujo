@@ -72,7 +72,7 @@ main {
 }
 
 .tit-home {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
     padding-bottom: 50px;
     width: 80%;
@@ -149,7 +149,7 @@ main {
 }
 
 #sobre {
-    background-image: linear-gradient(black, #232356, #24245b);
+    background-image: linear-gradient(black, #151536, #17173a);
     min-height: 550px;
     padding: 10px;
     display: flex;
@@ -182,7 +182,59 @@ main {
     text-shadow: 2px 2px 2px #333;
     margin: 20px;
 }
+.skills-section { 
+    background-color: #17173a; /* Ajuste para um tom mais escuro e profissional */ 
+    color: #fff; /* Texto branco para melhor contraste */ 
+    padding: 50px 0; 
+    text-align: center; 
+} 
 
+.tit-skills h2 { 
+    font-size: 2em; /* Aumentar o tamanho da fonte do título para maior destaque */ 
+    margin-bottom: 30px; 
+    color: #ffffff; /* Cor de destaque para o título */ 
+} 
+
+.lista-skills { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 30px; /* Maior espaçamento entre os itens */ flex-wrap: wrap; 
+    padding: 0 10px; /* Adicionar padding para evitar que os itens toquem as bordas da seção em dispositivos menores */ 
+} 
+
+.skill-item { 
+    background-color: #292946; /* Fundo mais escuro e consistente com o tema */ 
+    border: none; /* Remover borda para um visual mais limpo */ 
+    border-radius: 15px; /* Aumentar o raio da borda para um visual mais suave */ 
+    padding: 30px; /* Maior padding para um visual mais espaçoso */ 
+    width: 220px; /* Largura ligeiramente maior para mais espaço de conteúdo */ 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada para um efeito de elevação */ 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionar transição para a sombra */ 
+    text-align: center; /* Centralizar texto para um visual mais equilibrado */ 
+} 
+
+.skill-item:hover { 
+    transform: scale(1.1); /* Aumentar ligeiramente o efeito de escala ao passar o mouse */ 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Efeito de sombra mais profundo */ 
+} 
+
+.skill-item h3 { 
+    font-size: 1.6em; /* Aumentar o tamanho da fonte para melhor legibilidade */ 
+    margin-bottom: 15px; /* Maior espaçamento para separar do ícone */ 
+    color: #baebf1; /* Usar a mesma cor de destaque do título */ 
+} 
+
+.skill-item p { 
+    font-size: 1.1em; /* Ligeiro aumento no tamanho da fonte para melhor legibilidade */ 
+    color: #d1d1e9; /* Texto mais claro para melhor contraste */ 
+} 
+
+.skill-icon { 
+    font-size: 2.5em; /* Aumentar o tamanho dos ícones */ color: #ffb74d; /* Cor de destaque para os ícones */ margin-bottom: 20px; /* Maior espaçamento abaixo dos ícones */ }
+
+
+/*
 .skills-section {
     background-color: #24245b;
     color: #333;
@@ -235,9 +287,9 @@ main {
     color: #333;
     margin-bottom: 10px;
 }
-
+*/
 .portfolio-section {
-    background-image: linear-gradient(#232356, #24245b, black);
+    background-image: linear-gradient(#17173a, #24245b, black);
     color: #333;
     padding: 50px 0;
     text-align: center;
@@ -263,6 +315,27 @@ main {
     gap: 20px;
 }
 
+.portfolio-item { 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 300px; 
+    padding: 20px; 
+    text-align: center; 
+    transition: transform 0.3s ease; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.portfolio-item img {
+    max-height: 110px;
+    width: auto;
+    object-fit: cover;
+}
+
+/*
 .portfolio-item {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -272,7 +345,7 @@ main {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
-}
+}*/
 
 .portfolio-item:hover {
     transform: scale(1.05);
