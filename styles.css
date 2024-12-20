@@ -279,7 +279,8 @@ main {
 .skill-icon { 
     font-size: 2.5em; 
     color: #ffb74d;  
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+} 
 
 .portfolio-section {
     background-image: linear-gradient(#17173a, #24245b, black);
