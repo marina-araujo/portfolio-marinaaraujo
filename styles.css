@@ -15,6 +15,7 @@ body, html {
 
 header {
     background-color: black;
+    font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,8 +60,9 @@ nav div a {
 }
 
 nav div a:hover {
-    background-color: #745689; 
+    /*background-color: #745689; */
     color: azure;
+    font-size: 1.1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -85,13 +87,13 @@ nav div a:hover {
 }
 
 main {
-    background-color: yellow;
+    background-color: black;
 }
 
 #home {
     background-color: black;
     color: white;
-    min-height: 700px;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,48 +102,52 @@ main {
 }
 
 .tit-home {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
-    padding-bottom: 50px;
-    width: 80%;
+    padding-bottom: 60px;
+    width: 90%;
 }
 .tit-home h1 {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .conteudo-home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 90%;
     text-align: center;
 }
 
 .img-home {
     background: url('imgs/marina-profissional.png') no-repeat center center;
     background-size: cover;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .txt-home {
-    max-width: 400px;
-    min-height: 300px;
+    max-width: 500px;
+    min-height: 350px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    font-size: 1.3rem;
 }
 
 .txt-home p {
     text-align: center;
+    font-size: 1.2rem;
 }
+
+
 
 .skill-icon { 
     font-size: 3em; 
@@ -190,8 +196,8 @@ main {
 }
 #sobre { 
     background-image: linear-gradient(black, #151536, #17173a); 
-    min-height: 550px; 
-    padding: 40px 20px; 
+    min-height: 650px; 
+    padding: 50px 30px; 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
@@ -200,23 +206,21 @@ main {
 } 
 
 .tit-sobre { 
-    font-size: 2em; 
-    margin-bottom: 20px; 
+    font-size: 2.5em; 
+    margin-bottom: 30px; 
     color: #ffffff; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); 
 } 
 
 .txt-sobre { 
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(255, 255, 255, 0.95); 
     color: #333; 
-    width: 80%; max-width: 700px; 
-    padding: 30px; 
-    border-radius: 15px; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-    text-align: justify; 
-    margin: 20px 0; 
-    font-size: 1em; 
-    line-height: 1.6; 
+    width: 90%; max-width: 800px; 
+    padding: 40px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    font-size: 1.2em; 
+    line-height: 1.8; 
 }
 
 .tit-skills {
@@ -281,6 +285,49 @@ main {
     color: #ffb74d;  
     margin-bottom: 20px;
 } 
+
+.lista-hard-skills { 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+    padding: 0 10px;
+} 
+
+.hard-skill-box {
+    background-color: #292946;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    width: 460px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.hard-skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.hard-skill-box h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #baebf1;
+    text-align: center;
+}
+
+.hard-skill-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hard-skill-box li {
+    font-size: 1.2em;
+    color: #d1d1e9;
+    padding: 5px 0;
+    text-align: center;
+}
 
 .portfolio-section {
     background-image: linear-gradient(#17173a, #24245b, black);
