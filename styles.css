@@ -206,7 +206,7 @@ main {
 } 
 
 .tit-sobre { 
-    font-size: 2.5em; 
+    font-size: 2em; 
     margin-bottom: 30px; 
     color: #ffffff; 
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); 
@@ -226,7 +226,7 @@ main {
 .tit-skills {
     color: white;
     margin: 30px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-shadow: 2px 2px 4px #1b1b1b;
 }
 
@@ -415,6 +415,7 @@ main {
 }
 
 .contato-section h2 {
+    font-size: 2.5em;
     color: white;
 }
 
