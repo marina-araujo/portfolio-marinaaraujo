@@ -90,6 +90,10 @@ main {
     background-color: black;
 }
 
+ul {
+    padding-left: 30px;
+}
+
 #home {
     background-color: black;
     color: white;
